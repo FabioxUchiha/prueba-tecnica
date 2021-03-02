@@ -15,16 +15,18 @@ const Characteristics = ({ oferta }) => {
   const result = res.map((item) => item.map((item) => item));
 
   return (
-    <div className="mt-10 grid grid-cols-2" key="1">
+    <div className="grid grid-cols-2 mt-10" key="1">
       <div className="bg-red-200">
-        <h1>Caracteristicas</h1>
-        <table key="2">
+        <h1 className="text-center">Caracteristicas</h1>
+        <table key="2" className="border border-separate border-green-800">
           <tbody key="3">
             {result.map((item) => {
               return item.map((item) => {
                 return (
                   <tr key={item.id}>
-                    <td key={item.id}>{item.id}</td>
+                    <td className="border border-green-600" key={item.id}>
+                      {item.id}
+                    </td>
                   </tr>
                 );
               });

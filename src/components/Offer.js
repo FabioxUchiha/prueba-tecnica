@@ -24,7 +24,7 @@ const Offer = () => {
 
   return (
     <>
-      <div className="grid grid-cols-1 md:grid-cols-2 text-center">
+      <div className="grid grid-cols-1 text-center md:grid-cols-2">
         <div className="bg-red-300">
           <h1>Componente Offer</h1>
           <select onChange={onChange} name="selectId">
@@ -40,7 +40,7 @@ const Offer = () => {
             )}
           </select>
         </div>
-        <div className="bg-blue-300 grid grid-rows-2">
+        <div className="grid grid-rows-2 bg-blue-300">
           <label className="row-span-1">ID Oferta: {idOferta}</label>
           <label className="row-span-1">Nombre: {oferta}</label>
         </div>
